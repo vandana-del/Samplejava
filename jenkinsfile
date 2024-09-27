@@ -14,7 +14,7 @@ steps {
                     } else {
                         bat 'start /b some_command'
                     }
-                }}
+                }}}
         stage('Checkout') {
             steps {
                 // Checkout the code from GitHub
