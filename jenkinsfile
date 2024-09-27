@@ -18,7 +18,7 @@ steps {
         stage('Checkout') {
             steps {
                 // Checkout the code from GitHub
-                checkout scm
+                git credentialsId: 'docker-credentials-id', url: 'https://github.com/vandana-del/Samplejava.git'
             }
         }
         stage('Build') {
