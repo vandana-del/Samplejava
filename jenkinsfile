@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-stage('build'){
+stage('Run application'){
 steps {
                 script {
                     if (isUnix()) {
