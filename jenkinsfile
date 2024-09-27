@@ -10,9 +10,9 @@ stage('build'){
 steps {
                 script {
                     if (isUnix()) {
-                        sh 'nohup some_command &'
+                        sh 'nohup java -jar jenkins.war &'
                     } else {
-                        bat 'start /b some_command'
+                        bat 'start /b java -jar jenkins.war'
                     }
                 }}}
         stage('Checkout') {
