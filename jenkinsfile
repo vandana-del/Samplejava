@@ -4,6 +4,9 @@ pipeline {
     environment {
         DOCKER_IMAGE = "vandana690/simple-java"
     }
+agent {
+    label 'linux-agent'
+}
 
     stages {
 stage('Run application'){
